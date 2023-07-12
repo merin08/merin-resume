@@ -1,0 +1,454 @@
+/* Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* font-family: 'Poppins', sans-serif; */
+/* Prompt */
+@import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
+
+/* Lato */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+
+:root {
+    --primary-color: #6190ce;
+    --secondary-color: #3f7dce;
+    --bg-color: #fdfdfd;
+    --text-color: #333;
+    --main-color: #754ef9;
+    --white-color: #fdfdfd;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-color);
+    position: relative;
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+.goback{
+    position: fixed;
+    top:5%;
+    right:0;
+    z-index: 999;
+    
+
+}
+.goback a{
+    text-decoration: none;
+}
+.goback a button{
+    border: none;
+    height:50px;
+    width:100px;
+    background-color: black;
+    color:var(--primary-color);
+    transition: 500ms ease-out;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+.goback a button i{
+    z-index: 1000;
+    height:20px;
+    font-size: 4rem;
+    width:auto;
+    transition: 1s linear;
+    margin-bottom: 3rem;
+}
+
+.goback a button:hover{
+    box-shadow: inset 150px 0 0 0 var(--primary-color);
+    /* color:white; */
+    width:150px;
+
+}
+
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    padding-top: 10%;
+    /* padding-bottom: 5%; */
+}
+.container .resumetitle {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    color: whitesmoke;
+}
+.container .downloadresumeContainer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    color: whitesmoke;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20%;
+}
+.box {
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    margin:0px 10px;
+}
+.downloadresumeContainer .cardtitle {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.downloadresumeContainer .card {
+    height: 400px;
+    width: 100%;
+    background-color: whitesmoke;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    padding:50px;
+    position: relative;
+}
+.downloadresumeContainer .fakecard {
+    height: auto;
+    width: 100%;
+    background-color: whitesmoke;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    padding:50px;
+    position: relative;
+    color:rgb(114, 114, 114);
+    align-items: center;
+    justify-content: center;
+}
+.fakecard h1{
+    font-size: 25px;
+}
+.fakecard p{
+    padding:20px;
+    text-transform: capitalize;
+    font-size: 14px;
+    text-align: center;
+}
+
+.downloadresumeContainer .card .leftsection{
+    width:40%;
+    /* background-color: cornflowerblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:black;
+}
+
+.card .leftsection .year{
+    color:var(--primary-color)
+
+}
+.card .leftsection .degree{
+    color:black;
+    font-size: 1.1rem;
+}
+
+.card .leftsection .universityName,.companyName{
+    font-size: .9rem;
+    margin-bottom: 15px;
+
+}
+.card .leftsection .location{
+    font-size: .9rem;
+    color:gray;
+}
+.card .leftsection .college_name{
+    color:black;
+}
+
+.card .leftsection .location p span{
+    color:black;
+}
+
+.downloadresumeContainer .card .rightsection{
+    width:60%;
+    /* background-color: coral; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left:100px;
+    color:rgb(63, 63, 63);
+    font-size: 0.9rem;
+    word-spacing: 1px;
+}
+
+
+
+.downloadresumeContainer .skillcard {
+    height: auto;
+    width: 100%;
+    background-color: whitesmoke;
+    margin-bottom: 50px;
+    padding:50px;
+    /* box-shadow: 0px 0px 10px rgb(66, 66, 66); */
+
+}
+
+
+.downloadresumeContainer .skillcard .skillTitle{
+    color:var(--primary-color);
+    margin-top: 30px;
+    font-size: 15px;
+}
+.downloadresumeContainer .skillcard .mainskills{
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+
+    color:black;
+
+}
+.downloadresumeContainer .skillcard .mainskills .skill{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:20px 0px;
+}
+.downloadresumeContainer .skillcard .mainskills .skill .dot{
+  height:10px;
+   width:10px;
+   background-color: var(--secondary-color);
+   margin-right: 10px;
+}
+.downloadresumeContainer .skillcard .mainskills .skill p{
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+
+
+.downloadresumeContainer button {
+    border: none;
+    background-color: black;
+    height: 50px;
+    width: 200px;
+    position: relative;
+    color: whitesmoke;
+    font-size: 1.1rem;
+    transition: all 1s ease-out;
+    cursor:pointer;
+}
+
+.downloadresumeContainer a {
+    /*font-size: 1.1rem;*/
+    text-decoration: none;
+    color:black;
+}
+
+.downloadresumeContainer a .dr::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 500ms ease-out;
+    z-index: -1;
+}
+.downloadresumeContainer a .dr:hover::before {
+    transform: scaleX(1);
+}
+.downloadresumeContainer a .dr:hover {
+    transform: scaleX(1);
+    color: black;
+}
+
+/* Copyright */
+
+.copyrightContainer{
+    height:100px;
+    width:100%;
+    background-color:var(--text-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color:whitesmoke;
+    cursor: default;
+}
+.copyrightContainer .copyright{
+    color:whitesmoke;
+    display: block;
+    text-align: center;
+}
+.copyrightContainer .contactcontainer{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+ .proudly{
+    font-size: 0.9rem;
+    font-family: 'Lato';
+}
+.call , .mail{
+    margin:0px 20px;
+}
+.copyrightContainer a{
+    color:whitesmoke;
+    text-decoration: none;
+}
+
+@media (max-width:1000px) {
+    .container .downloadresumeContainer {
+        padding: 0px 5%;
+    }
+    .downloadresumeContainer .card .leftsection{
+        width:50%;
+    }
+    .card .leftsection .degree{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .downloadresumeContainer .card .leftsection{
+        width:100%;
+    }
+
+    .downloadresumeContainer .card{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Skill card */
+
+    .downloadresumeContainer .skillcard .mainskills{
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+    .downloadresumeContainer .skillcard .skillTitle{
+        font-size: 0.8rem;
+    }
+
+    .downloadresumeContainer .skillcard .mainskills .skill p{
+        font-size: 15px;
+    }
+
+    .card .leftsection .universityName, .companyName{
+        margin-bottom: 0px;
+    }
+    .downloadresumeContainer .card{
+        height:auto;
+    }
+    .downloadresumeContainer .card .rightsection{
+        padding-left:0px;
+        margin-top: 30px;
+    }
+    .downloadresumeContainer .card .rightsection{
+        width:100%;
+    }
+    .copyrightContainer{
+        height:150px;
+    }
+    .copyrightContainer .contactcontainer{
+        flex-direction: column;
+    }
+    .call, .mail{
+        margin:10px 0px;
+    }
+}
+@media (max-width: 600px) {
+
+    .goback a button{
+        width:50px;
+    }
+    .goback a button::after{
+        display: none;
+    }
+    .container .resumetitle{
+        height:50px;
+    }
+    .downloadresumeContainer button {
+        font-size: 1rem;
+        height: 50px;
+        width: 150px;
+    }
+    .cardtitle {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:500px) {
+    .downloadresumeContainer .card{
+        padding:25px;
+    }
+    /* Fake Card */
+    .fakecard h1{
+        font-size: 20px;
+    }
+    /* Skills */
+
+    .downloadresumeContainer .skillcard .skillTitle{
+        font-size: 0.6rem;
+    }
+
+    .downloadresumeContainer .skillcard .mainskills .skill p{
+        font-size: 12px;
+    }
+
+    .copyrightContainer {
+        flex-direction: column;
+        height:200px;
+        padding:10px;
+    }
+    /* Skill Grid */
+    .downloadresumeContainer .skillcard{
+        padding:30px;
+
+    }
+    .downloadresumeContainer .skillcard .mainskills{
+        grid-template-columns: repeat(2,1fr);
+
+    }
+}
+
+@media (max-width:400px) {
+
+    .goback a button{
+        width:40px;
+        height:40px;
+    }
+    .goback a button img{
+        height:15px;
+    }
+    .downloadresumeContainer .card .rightsection{
+        font-size: 0.8rem;
+    }
+    .downloadresumeContainer button {
+        font-size: 0.8rem;
+        height: 40px;
+        width: 120px;
+    }
+    .cardtitle h1{
+        font-size: 25px;
+    }
+}
